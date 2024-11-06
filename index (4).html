@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoBank - Where Innovation Meets Your Finances</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>EvoBank</h1>
+        <p>Where Innovation Meets Your Finances</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#calculator">Calculator</a>
+            <a href="#faq">FAQ & Help</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About EvoBank</h2>
+            <p>At EvoBank, we’re redefining modern banking by integrating advanced technology with personal financial services. Our mission is to empower users with a seamless digital experience while keeping finances secure, transparent, and accessible.</p>
+            <div class="team">
+                <div class="team-member">
+                    <img src="https://media-hel3-1.cdn.whatsapp.net/v/t61.24694-24/424425422_3212247535751438_7388550097866439094_n.jpg?ccb=11-4&oh=01_Q5AaIN1a8tZ2Ca3Mp5N0JYA01iWCDY9m770Yu51HYgapL9Mh&oe=6738C282&_nc_sid=5e03e0&_nc_cat=105" alt="Berdaliyeva Birnara">
+                    <h3>Berdaliyeva Birnarah3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="blob:https://web.whatsapp.com/9b864fb5-485d-4017-8e1c-44cf6c4fe4c9" alt="Zhumazhanova Saltanat">
+                    <h3>Zhumazhanova Saltanat</h3>
+                    <p>Chief Financial Officer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Financial Calculator -->
+        <section id="calculator">
+            <h2>Financial Calculator</h2>
+            <p>Try our interactive financial calculator to plan your finances.</p>
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button onclick="calculateInterest()">Calculate Interest</button>
+            <p id="result"></p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>FAQ & Help Center</h2>
+            <details>
+                <summary>How do I create an account?</summary>
+                <p>Simply click on the "Sign Up" button on the homepage and fill in the required information.</p>
+            </details>
+            <details>
+                <summary>Is my information secure?</summary>
+                <p>Yes, we use top-notch encryption and security measures to protect your data.</p>
+            </details>
+        </section>
+    </main>
+
+    <!-- Live Chat Button -->
+    <button class="chat-button" onclick="openChat()">Chat with Us</button>
+
+    <!-- Live Chat Popup -->
+    <div class="chat-popup" id="chatPopup">
+        <h3>Live Chat</h3>
+        <textarea placeholder="Type your message..."></textarea>
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="closeChat()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
